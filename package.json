@@ -1,11 +1,13 @@
 {
-  "name": "sazon-control-api",
+  "name": "backend-amangiare",
   "version": "1.0.0",
   "description": "Backend para gestión de comida casera y deudas a vecinos",
-  "main": "src/app.js",
+  "main": "dist/app.js",
+  "type": "module",
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js",
+    "dev": "nodemon --exec \"node --loader ts-node/esm\" src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -13,7 +15,8 @@
     "mongodb",
     "venezuela",
     "comida",
-    "gestion"
+    "gestion",
+    "typescript"
   ],
   "author": "Tu Nombre",
   "license": "ISC",
@@ -27,6 +30,13 @@
     "swagger-ui-express": "^5.0.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.0",
+    "@types/node": "^20.19.35",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "5.4.5"
   }
 }
