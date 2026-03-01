@@ -1,0 +1,29 @@
+# Dependencias (Se instalan con npm install, no se suben)
+node_modules/
+
+# Variables de entorno (Contiene tus contraseñas de MongoDB y API Keys)
+.env
+
+# Archivos de logs (Registros de errores del sistema)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# Archivos de configuración del editor (Opcional, depende de tu editor)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Compilaciones o archivos temporales
+dist/
+build/
